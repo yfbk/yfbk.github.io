@@ -4,35 +4,7 @@
   font-display: swap;
   font-weight: lighter;
 } */
-@font-face {
-    font-family: ZhuZiAYuanJWD;
-    src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/ZhuZiAWan.woff2);
-    font-display: swap;
-    font-weight: lighter;
-  }
-  
-  div#menus {
-    font-family: "ZhuZiAYuanJWD";
-  }
-  h1#site-title {
-    font-family: ZhuZiAYuanJWD;
-    font-size: 3em !important;
-  }
-  a.article-title,
-  a.blog-slider__title,
-  a.categoryBar-list-link,
-  h1.post-title {
-    font-family: ZhuZiAYuanJWD;
-  }
-  
-  .iconfont {
-    font-family: "iconfont" !important;
-    font-size: 3em;
-    /* 可以定义图标大小 */
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
+
   
   /* 时间轴生肖icon */
   svg.icon {
@@ -49,42 +21,6 @@
     color: #f7c768;
   }
   
-  /* bilibli番剧插件 */
-  #article-container .bangumi-tab.bangumi-active {
-    background: var(--anzhiyu-theme);
-    color: var(--anzhiyu-ahoverbg);
-    border-radius: 10px;
-  }
-  a.bangumi-tab:hover {
-    text-decoration: none !important;
-  }
-  .bangumi-button:hover {
-    background: var(--anzhiyu-theme) !important;
-    border-radius: 10px !important;
-    color: var(--anzhiyu-ahoverbg) !important;
-  }
-  a.bangumi-button.bangumi-nextpage:hover {
-    text-decoration: none !important;
-  }
-  .bangumi-button {
-    padding: 5px 10px !important;
-  }
-  
-  a.bangumi-tab {
-    padding: 5px 10px !important;
-  }
-  svg.icon.faa-tada {
-    font-size: 1.1em;
-  }
-  .bangumi-info-item {
-    border-right: 1px solid #f2b94b;
-  }
-  .bangumi-info-item span {
-    color: #f2b94b;
-  }
-  .bangumi-info-item em {
-    color: #f2b94b;
-  }
   
   /* 解决artitalk的图标问题 */
   #uploadSource > svg {
@@ -102,10 +38,7 @@
     background: rgba(255, 255, 255, 0.9);
   }
   
-  /* 首页侧栏卡片 */
-  #aside-content .card-widget {
-    background: rgba(255, 255, 255, 0.9);
-  }
+  
   
   /* 文章页面正文背景 */
   div#post {
@@ -179,25 +112,21 @@
   }
   
   /* 滚动条 */
-  
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background-color: #3b70fc;
-    border-radius: 2em;
-  }
-  
-  ::-webkit-scrollbar-corner {
-    background-color: transparent;
-  }
-  
-  ::-moz-selection {
-    color: #fff;
-    background-color: #3b70fc;
-  }
+::-webkit-scrollbar-thumb {
+  background-color: #2ab1ff;
+  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .4) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .4) 75%, transparent 75%, transparent);
+  border-radius: 3em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+  border-radius: 3em;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 15px;
+}
   
   /* 音乐播放器 */
   
@@ -741,3 +670,12 @@ hr:before {
     padding-left: 1.2rem
 }
 
+@font-face{
+  font-family:'Candyhome' ;  /* 字体名自定义即可 */
+  src:url('/fonts/Candy.ttf'); /* 字体文件路径 */
+  font-display : swap;
+}
+
+body {
+  font-family: 'Candyhome', sans-serif;
+}
